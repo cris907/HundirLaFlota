@@ -1,4 +1,3 @@
-const TAMAÑO_MAX = 10;
 var jugador1, jugador2;
 var posicion = "Horizontal";
 var numBarco = 0;
