@@ -1,0 +1,1 @@
+document.getElementById("nuevaPartida").addEventListener("click", nuevaPartida );

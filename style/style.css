@@ -1,0 +1,75 @@
+* {
+    text-align: center;
+  }
+
+.casilla {
+    width: 35px;
+    height: 35px;
+    margin-top: -5px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#contenedor{
+    margin-left: 60px;
+}
+
+.tableroJugador1 {
+    float: left;
+}
+
+.tableroJugador2 {
+    float: left;
+    margin-left: 100px;
+    
+}
+
+#nuevaPartida{
+    padding: 8px;
+    margin: 20px;
+    border: 1px solid #176582;
+    border-radius: 6px;    
+    background-color: #aab7d4;
+}
+
+#nuevaPartida:hover {
+    background-color: #c5dada;
+    color: white;
+}
+
+#botones{
+    width: 150px;
+    float: left;
+    margin-top: 50px;
+    margin-right: 45px;
+}
+
+.boton{
+    padding: 5px;
+    width: 100px;
+    margin: 20px;
+    border: 1px solid #1b4c25;
+    border-radius: 5px;
+    background: #4c9671;
+}
+
+.boton:hover{    
+    background-color: #8edab4;
+    color: white;
+}
+
+.blanco {
+    background-color: white;
+}
+
+.gris {
+    background-color: #2e2e2b;
+}
+
+.azul{
+    background-color: #444992;
+}
+
+.rojo{
+    background-color: #f10707;
+}

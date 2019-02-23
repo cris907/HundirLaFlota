@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hundir la Flota</title>
+    <link rel="stylesheet" href="style/style.css" type="text/css" />
+</head>
+<body>
+    <h1>Hundir la Flota</h1>
+    <div>
+        <button id="nuevaPartida">Nueva Partida</button>
+    </div>
+    <div id="contenedor" style="display: none;">
+        <div id="botones">
+                <button class="boton" onClick="cambiarPosicion('Horizontal')">Horizontal</button>
+                <button class="boton" onClick="cambiarPosicion('Vertical')">Vertical</button>
+                <button class="boton" onClick="colocarBarcosAleatoriamente()">Random</button>
+        </div>
+        <div class="tableroJugador1">
+                <h2>Tú</h2>
+            <div id="jugador1">
+            </div> 
+        </div>   
+        <div class="tableroJugador2">
+                <h2>Enemigo</h2>
+            <div id="jugador2">
+            </div>
+        </div>        
+    </div>
+    <script src="logica_juego/metodos_jugador.js" type="text/javascript"></script>
+    <script src="logica_juego/metodos_barco.js" type="text/javascript"></script>
+    <script src="logica_juego/metodos_tablero.js" type="text/javascript"></script>
+    <script src="js/js.js" type="text/javascript"></script>
+</body>
+</html>
