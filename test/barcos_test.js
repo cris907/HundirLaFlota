@@ -181,35 +181,15 @@ describe('colocarBarco', function () {
     it('no debería añadir un barco al jugador debido a que se encuentra fuera de los límites', function () {
 
         jugador = {
-            barcos: [
-                {
-                    localizaciones: [],
-                    daños: []
-                }
-            ]
+            barcos: []
         };
         
         var barco = {
-                localizaciones: [],
+                localizaciones: [[9, 0],[10, 0]],
                 daños: []
         }
 
         colocarBarco(jugador, barco);
         expect(jugador.barcos).that.not.includes(barco);
-    });
-});
-
-describe('colocarBarcosAleatoriamente', function () {
-    var colocarBarcosAleatoriamente = require('../logica_juego/metodos_barco').colocarBarcosAleatoriamente;   
-
-    it('debería colocar todos los barcos aleatoriamente', function () {
-
-        jugador = {
-            tablero: new Array(10).fill(new Array(10).fill(0)),
-            barcos: []
-        };
-
-        colocarBarcosAleatoriamente(jugador);
-        expect(jugador.barcos.length).to.equal(5);
     });
 });
